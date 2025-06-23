@@ -1,0 +1,26 @@
+@keyframes scroll-x {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-scroll-x {
+  animation: scroll-x 10s linear infinite;
+}
+.hover\:pause-animation:hover {
+  animation-play-state: paused;
+}
+/* Neon glow text effect */
+.neon-text {
+  text-shadow: 0 0 10px #f472b6, 0 0 20px #f472b6, 0 0 30px #f472b6;
+}
+
+/* Preloader fade-out animation */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.preloader-hide {
+  animation: fadeOut 0.6s ease forwards;
+}
