@@ -24,3 +24,37 @@
 .preloader-hide {
   animation: fadeOut 0.6s ease forwards;
 }
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 15s linear infinite;
+}
+
+
+
+/* but button 
+*/
+
+@keyframes glow-pulse {
+  0% {
+    box-shadow: 0 0 20px #00f5ff, 0 0 40px #ff00f5, 0 0 60px #ff00f5;
+  }
+  50% {
+    box-shadow: 0 0 30px #ff00f5, 0 0 50px #00f5ff, 0 0 70px #00f5ff;
+  }
+  100% {
+    box-shadow: 0 0 20px #00f5ff, 0 0 40px #ff00f5, 0 0 60px #ff00f5;
+  }
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 2s infinite alternate;
+}
