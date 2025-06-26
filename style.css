@@ -22,7 +22,7 @@
 }
 
 .preloader-hide {
-  animation: fadeOut 1.6s ease forwards;
+  animation: fadeOut 1.5s ease forwards;
 }
 @keyframes marquee {
   0% {
